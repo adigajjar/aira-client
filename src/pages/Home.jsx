@@ -5,7 +5,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-[#FFEBCD] flex flex-col items-center justify-center min-h-screen text-center px-4">
+    <div className="bg-[#FFEBCD] flex flex-col items-center justify-center min-h-[calc(100vh-75px)] text-center px-4">
       <h1 className="text-6xl font-bold text-black mb-4">
         AiRA
         <span className="text-4xl font-light text-gray-700 block mt-2">
@@ -19,7 +19,7 @@ const Home = () => {
       {/* Get Started Button */}
       <button
         onClick={() => navigate("/search")}
-        className="px-6 py-3 text-xl font-semibold text-white rounded-full shadow-lg transition-transform transform hover:scale-105"
+        className="px-6 py-3 text-xl font-semibold text-white rounded-full shadow-lg transition-transform transform hover:scale-105 cursor-pointer"
         style={{
           background: "linear-gradient(to right, blue, yellow)",
           boxShadow:
